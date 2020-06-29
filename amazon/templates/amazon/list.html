@@ -1,0 +1,26 @@
+{% extends 'amazon/home.html' %}
+{% load static %}
+
+{% block products %}
+  
+{% for object in object_list %}
+  
+
+<li class="mr-3">
+  <a href="{% url 'amazon:product-detail' object.pk%}"><div class="card" style="width: 18rem;">
+    <img
+      src="{{ object.thumbnail.url }}"
+      class="card-img-top"
+      alt="..."
+    /></a>
+    <div class="card-body">
+      <h5 class="card-title">{{ object.name }}</h5>
+      <p class="card-text">{{object.description}}</p>
+      <p>{{ object.price }}円</p>
+      <a href="#" class="btn btn-primary">カートに入れる</a>
+    </div>
+  </div>
+</li>
+
+{% endfor %}
+{% endblock products %}

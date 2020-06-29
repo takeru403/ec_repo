@@ -1,0 +1,51 @@
+[{
+  "model":  "amazon.Product",
+  "pk": 0,
+  "fields":{
+    "name": "flower1",
+    "price": "100",
+    "description": "肌にいいです",
+    "thumbnail": "flower.jpg"
+  }
+},
+{
+  "model":  "amazon.Product",
+  "pk": 1,
+  "fields":{
+    "name": "flower2",
+    "price": "20",
+    "description": "顔にいいです",
+    "thumbnail": "flower.jpg"
+  }
+  
+},
+{
+  "model":  "amazon.Product",
+  "pk": 2,
+  "fields":{
+    "name": "flower3",
+    "price": "1500",
+    "description": "足にいいです",
+    "thumbnail": "flower.jpg"
+  }
+},
+{
+  "model":  "amazon.Product",
+  "pk": 3,
+  "fields":{
+    "name": "flower4",
+    "price": "500",
+    "description": "腕にいいです",
+    "thumbnail": "flower.jpg"
+  }
+},
+{
+  "model":  "amazon.Product",
+  "pk": 4,
+  "fields":{
+    "name": "flower5",
+    "price": "1300",
+    "description": "手にいいです",
+    "thumbnail": "flower.jpg"
+  }
+}]

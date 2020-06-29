@@ -128,3 +128,6 @@ SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
 SASS_PRECISION = 8
 SASS_OUTPUT_STYLE = 'compact'
 SASS_TEMPLATE_EXTS = ['.html', '.haml']
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

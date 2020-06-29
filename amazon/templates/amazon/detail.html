@@ -1,0 +1,14 @@
+{% extends 'amazon/base.html' %} {% load static %} {% block body %}
+
+<div class="container" style="text-align: center;">
+  <h2>{{ object.name }}</h2>
+  <p>{{ object.description }}</p>
+  <img
+    src="{{ object.thumbnail.url }}"
+    class="card-img-top"
+    alt="..."
+    style="width: 100px; height: 100px;"
+  />
+</div>
+
+{% endblock body %}
