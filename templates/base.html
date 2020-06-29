@@ -1,4 +1,5 @@
 {% load static %} {% load sass_tags %}
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -28,7 +29,9 @@
   <body class="container">
     <header>
       <div class="title" style="text-align: center;">
-     
+        <form class="form-inline navbar-search" method="GET" action="{% url 'amazon:product-list' %}">
+          <input type="text" name="query">
+        </form>a
         <h1>花茶</h1>
         <p>flower tea</p>
         <small>official store</small>
@@ -165,62 +168,9 @@
               padding: 0;
             "
           >
-            <li class="mr-3">
-              <div class="card" style="width: 18rem;">
-                <img
-                  src="{% static '../../static/img/花写真 (1).jpg' %}"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">花茶1</h5>
-                  <p class="card-text">効果は頭痛にききます</p>
-                  <a href="#" class="btn btn-primary">カートに入れる</a>
-                </div>
-              </div>
-            </li>
-            <li class="mr-3">
-              <div class="card" style="width: 18rem;">
-                <img
-                  src="{% static '../../static/img/花写真 (1).jpg' %}"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">花茶2</h5>
-                  <p class="card-text">効果は体にききます</p>
-                  <a href="#" class="btn btn-primary">カートに入れる</a>
-                </div>
-              </div>
-            </li>
-            <li class="mr-3">
-              <div class="card" style="width: 18rem;">
-                <img
-                  src="{% static '../../static/img/花写真 (1).jpg' %}"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">花茶３</h5>
-                  <p class="card-text">効果は心にききます</p>
-                  <a href="#" class="btn btn-primary">カートに入れる</a>
-                </div>
-              </div>
-            </li>
-            <li class="mt-3">
-              <div class="card" style="width: 18rem;">
-                <img
-                  src="{% static '../../static/img/花写真 (1).jpg' %}"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">花茶４</h5>
-                  <p class="card-text">効果は腕にききます</p>
-                  <a href="#" class="btn btn-primary">カートに入れる</a>
-                </div>
-              </div>
-            </li>
+          {% block products %}
+            
+          {% endblock products %}
           </ul>
         </div>
       </section>
